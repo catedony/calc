@@ -1,0 +1,31 @@
+table {
+	border: 1px solid black;
+	border-spacing: 7px;
+}
+td {
+	border: 1px solid black;
+	padding: 10px 15px;
+
+}
+.btn:hover {
+	cursor: pointer;
+	background-color: black;
+	color: white;
+}
+.display {
+	padding: 5px;
+	text-align: right;
+
+}
+.reset {
+	display: inline-block;
+	padding: 5px 10px;
+	margin-right: 5px;
+	border: 1px solid black;
+	float: left;
+}
+.result {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 5px;
+}
