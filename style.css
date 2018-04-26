@@ -1,31 +1,58 @@
+body {
+	background-color: rgba(211, 211, 211, 0.37);
+	color: blueviolet;
+	font-size: 24px;
+	font-family: serif;
+}
+.header {
+	color: blueviolet;
+	border-bottom: 1px solid lightgrey;
+	font-family: sans-serif;
+}
+.body {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-color: white;
+	transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	
+}
 table {
-	border: 1px solid black;
-	border-spacing: 7px;
+	box-shadow: 
+		-2px 2px 0 1px lightgrey,
+		-10px 10px 10px -10px black;
+	border-spacing: 0.5em;
+	border-radius: 5px;
 }
 td {
-	border: 1px solid black;
-	padding: 10px 15px;
+	padding: 0.3em 0.7em;
+	border-radius: 5px;
 
+}
+.btn {
+	border-radius: 5px;
+	box-shadow: -1px 1px 4px rgb(169, 76, 255);
 }
 .btn:hover {
 	cursor: pointer;
-	background-color: black;
-	color: white;
+	box-shadow:  -1px 1px 2px blueviolet;
+}
+.btn:active {
+	cursor: pointer;
+	box-shadow: inset 0 0 4px blueviolet;
 }
 .display {
-	padding: 5px;
+	padding: 0.2em;
 	text-align: right;
+	box-shadow: inset -1px 1px 2px rgb(169, 76, 255);
+	text-shadow: none;
+}
 
-}
-.reset {
-	display: inline-block;
-	padding: 5px 10px;
-	margin-right: 5px;
-	border: 1px solid black;
-	float: left;
-}
 .result {
 	display: inline-block;
 	vertical-align: middle;
-	padding: 5px;
 }
