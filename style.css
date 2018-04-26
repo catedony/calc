@@ -1,15 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
 body {
 	background-color: rgba(211, 211, 211, 0.37);
 	color: blueviolet;
-	font-size: 24px;
-	font-family: serif;
+	font-size: 16px;
+	font-family: 'Gugi', cursive;
 }
 .header {
-	color: blueviolet;
+	color: rgb(207, 205, 205);
 	border-bottom: 1px solid lightgrey;
-	font-family: sans-serif;
+	font-family: 'Gugi', cursive;
+	font-size: 2rem;
+	padding: 0.4rem 0;
 }
 .body {
+	font-size: 1.2rem;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -25,34 +30,49 @@ table {
 	box-shadow: 
 		-2px 2px 0 1px lightgrey,
 		-10px 10px 10px -10px black;
-	border-spacing: 0.5em;
+	border-spacing: 0.7rem;
 	border-radius: 5px;
+	padding: 0 0.2rem;
 }
 td {
-	padding: 0.3em 0.7em;
+	width: 25%;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0.6rem 1rem;
 	border-radius: 5px;
 
 }
 .btn {
 	border-radius: 5px;
-	box-shadow: -1px 1px 4px rgb(169, 76, 255);
+	box-shadow: 
+	-1px 1px 0 1px lightgrey,
+		-2px 2px 5px 1px blueviolet;
 }
 .btn:hover {
 	cursor: pointer;
-	box-shadow:  -1px 1px 2px blueviolet;
+	box-shadow: 
+	-1px 1px 0 1px lightgrey,
+		-2px 2px 5px 1px rgb(169, 76, 255);
 }
 .btn:active {
 	cursor: pointer;
 	box-shadow: inset 0 0 4px blueviolet;
 }
 .display {
-	padding: 0.2em;
+	padding: 0.2rem 0.4rem;
 	text-align: right;
-	box-shadow: inset -1px 1px 2px rgb(169, 76, 255);
+	background-color: whitesmoke;
+	box-shadow: inset -1px 1px 2px rgb(160, 170, 180);
 	text-shadow: none;
+	
 }
 
 .result {
+	color: darkgrey;
+	font-family: 'Audiowide', cursive;
+	font-size: 1.7rem;
+	overflow: hidden;
+	max-width: 8.9rem;
 	display: inline-block;
 	vertical-align: middle;
 }
