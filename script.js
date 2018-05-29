@@ -1,20 +1,19 @@
-var str = '';
-var display = document.querySelector('.result');
+let str = '';
+const display = document.querySelector('.result');
 
-var btn = document.querySelectorAll('.btn_act');
+const btn = document.querySelectorAll('.btn_act');
 
-for (var i = 0; i < btn.length; i++) {
-	btn[i].addEventListener('click', input);
+for (let value of btn) {
+	value.addEventListener('click', input);
 }
 
-var result = document.querySelector('.is');
+const result = document.querySelector('.is');
 result.addEventListener('click', getResult);
 
 var reset = document.getElementById('reset');
 reset.addEventListener('click', clear);
 
 function input() {
-
 	str += this.innerHTML;
 	display.innerHTML = str;
 }
@@ -25,7 +24,7 @@ function clear() {
 }
 
 function getResult() {
-	var answer = eval(str);
+	let answer = eval(str);
 	str = answer;
 	display.innerHTML = answer;
 }
